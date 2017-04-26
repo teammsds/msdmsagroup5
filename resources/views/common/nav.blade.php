@@ -56,7 +56,7 @@
                     </ul>
                     </li>
                 @endrole
-                    </ul>
+                    
               {{-- Menu for Users with referee Role Only --}}   
                 @role('referee')
                     <li class="dropdown">
