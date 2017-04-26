@@ -45,7 +45,7 @@ class StatisticController extends Controller
                         $playernum = $playerid.$j;
                     }
                 }
-            }
+            
             Statistic::truncate();
             
             $player = Player::where('id','=',$playernum)->first();
