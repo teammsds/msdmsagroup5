@@ -52,6 +52,9 @@ class StatisticController extends Controller
                 $statistic = new Statistic();
                 $statistic['m_scored'] = $tname;
                 $statistic['m_fouls'] = $player->p_fname;
+            $statistic['m_passes'] = "Tarun";
+            $statistic['m_saves'] = "Tarun";
+            $statistic['m_assists'] = "Tarun";
                 $statistic->save();
                 return view('matches.statistics', compact('statistic'));
 
