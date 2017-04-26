@@ -60,11 +60,11 @@ class MatchController extends Controller
     {
 
         $match= new Match($request->all());
-        $match->save();
         $match->referees()->attach($request['id1']);
         $match->referees()->attach($request['id2']);
         $match->teams()->attach($request['m_homeid']);
         $match->teams()->attach($request['m_guestid']);
+        $match->save();
 
         if($request['m_homeg']>$request['m_guestg']) {
             $team = Team::findOrFail($request['m_homeid']);
