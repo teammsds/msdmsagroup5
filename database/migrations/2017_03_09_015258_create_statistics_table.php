@@ -14,11 +14,11 @@ class CreateStatisticsTable extends Migration
     {
         Schema::create('statistics', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('m_scored');
-            $table->integer('m_fouls');
-            $table->integer('m_passes');
-            $table->integer('m_saves');
-            $table->integer('m_assists');
+            $table->string('m_scored');
+            $table->string('m_fouls');
+            $table->string('m_passes');
+            $table->string('m_saves');
+            $table->string('m_assists');
             $table->timestamps();
         });
         //
