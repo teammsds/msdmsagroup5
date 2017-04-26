@@ -6,7 +6,7 @@
                     <div class="panel panel-default" style="background-color: lightgoldenrodyellow;box-shadow: 2px 2px 2px #999;font-family:cambria;font-size:17px">
                         <div class="panel-heading" style="background-color: lightgoldenrodyellow;box-shadow: 2px 2px 2px #999;font-family:cambria;font-size:17px">
         <h1 style="color:gainsboro">Player Details</h1>
-        <table class="table table-hover">
+        <table class="table table-hover" style="background-color: lightgoldenrodyellow;box-shadow: 2px 2px 2px #999;font-family:cambria;font-size:17px">
             <tbody>
             <tr class="bg-info">
             <tr>
