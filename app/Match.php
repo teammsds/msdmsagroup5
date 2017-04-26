@@ -12,8 +12,6 @@ class Match extends Model
         'm_time',
         'm_date',
         'm_score',
-        'm_homeid',
-        'm_guestid',
         'm_ref_com',
         'm_homeg',
         'm_guestg',
