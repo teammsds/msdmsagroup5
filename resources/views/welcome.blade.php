@@ -23,11 +23,11 @@
                        
         </div>
         <div class="col-lg-8 col-md-8 wow bounceInRight">
-                <i class="fa fa-futbol-o" style="font-size: 30px;color:red"></i>
+                <i class="fa fa-futbol-o" style="font-size: 40px;color:red"></i>
            <a style= "color: white;text-shadow: 2px 2px 4px #000000" href="{{ action('MatchController@index')}}" class="glow">Visit ongoing matches</a>
            <br>
            <br>
-           <i class="fa fa-futbol-o" style="font-size: 30px;color:Green"></i>
+           <i class="fa fa-futbol-o" style="font-size: 40px;color:Green"></i>
            <a style= "color: white;text-shadow: 2px 2px 4px #000000" href="{{ action('TournamentController@index')}}" class="glow">Tournament List</a>
              </div>
           <div class="col-md-4 col-md-offset-2">
