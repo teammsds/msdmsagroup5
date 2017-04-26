@@ -20,11 +20,11 @@
             </tr>
             </thead>
 
-            <tbody>
+            <tbody style="text-align:left">
 
 
             @foreach ($leaderboards as $leaderboard)
-                <tr>
+                <tr style="text-align:left">
                     <td style="text-align:left">{{ $leaderboard->t_name }}</td>
                     <td style="text-align:left">{{ $leaderboard->wins }}</td>
                     <td style="text-align:left">{{ $leaderboard->losses }}</td>
