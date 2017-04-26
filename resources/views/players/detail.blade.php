@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-15 col-md-offset-0">
                     <div class="panel panel-default" style="background-color: lightgoldenrodyellow;box-shadow: 2px 2px 2px #999;font-family:cambria;font-size:17px">
-                        <div class="panel-heading">
+                        <div class="panel-heading" style="background-color: lightgoldenrodyellow;box-shadow: 2px 2px 2px #999;font-family:cambria;font-size:17px">
         <h1 style="color:gainsboro">Player Details</h1>
         <table class="table table-hover">
             <tbody>
