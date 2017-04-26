@@ -25,13 +25,13 @@
 
             @foreach ($leaderboards as $leaderboard)
                 <tr>
-                    <td>{{ $leaderboard->t_name }}</td>
-                    <td>{{ $leaderboard->wins }}</td>
-                    <td>{{ $leaderboard->losses }}</td>
-                    <td>{{ $leaderboard->draws }}</td>
-                    <td>{{ $leaderboard->gfor }}</td>
-                    <td>{{ $leaderboard->gaga }}</td>
-                    <td>{{ $leaderboard->points }}</td>
+                    <td style="text-align:left">{{ $leaderboard->t_name }}</td>
+                    <td style="text-align:left">{{ $leaderboard->wins }}</td>
+                    <td style="text-align:left">{{ $leaderboard->losses }}</td>
+                    <td style="text-align:left">{{ $leaderboard->draws }}</td>
+                    <td style="text-align:left">{{ $leaderboard->gfor }}</td>
+                    <td style="text-align:left">{{ $leaderboard->gaga }}</td>
+                    <td style="text-align:left">{{ $leaderboard->points }}</td>
                 </tr>
             @endforeach
 
