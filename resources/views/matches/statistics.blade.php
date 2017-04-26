@@ -7,7 +7,7 @@
                     <div class="panel-heading" style="background-color: lightgoldenrodyellow">
         {!! Form::open(['url' => 'table']) !!}
                         <h1 style="text-align:center"> Statistics </h1>
-        <table class="table tabel-sm table-striped table-hover tabel-responsive" style="background-color: lightgoldenrodyellow">
+        <table class="table tabel-sm table-striped table-hover tabel-responsive" style="background-color: lightgoldenrodyellow;text-align:left">
             <thead style="background-color: lightgoldenrodyellow">
             <tr class="bg-info">
                 <th style="background-color: lightgoldenrodyellow"> Most Scored </th>
@@ -22,7 +22,7 @@
 
 
 
-                <tr style="background-color: lightgoldenrodyellow">
+                <tr style="background-color: lightgoldenrodyellow;text-align:left">
                     <td>{{ $statistic->m_scored }}</td>
                     <td> John Paul </td>
                     <td> Emanderson </td>
