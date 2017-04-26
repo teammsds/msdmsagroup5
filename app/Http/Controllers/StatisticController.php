@@ -35,7 +35,7 @@ class StatisticController extends Controller
                     $maxfoul.$i= $maxfoul['y_card'] + $maxfoul['r_card'];
                     $playerid.$i = $maxfoul['player_id'];
                     $pid=$maxfoul['player_id'];
-                }
+                }}
                 $k = 1;
                 $max = $maxfoul.$k;
                 $playernum = $playerid.$k;
