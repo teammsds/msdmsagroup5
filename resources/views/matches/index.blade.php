@@ -22,9 +22,8 @@
         <thead>
         <tr class="bg-info">
             <th>Match Number</th>
-	    @foreach($match->teams as $team)
-            <th>{{ $team->tm_name}}</th>
-            @endforeach
+	    <th> Home Id </th>
+	    <th> Guest Id </th>
             <th>Date</th>
 			<th>Time</th>
             <th>Score</th>
@@ -47,8 +46,9 @@
 
 
                <td><a href="{{url('/matches/detail',$match->id)}}">{{ $match->m_number }}</a></td>
-                   <td>{{$match->m_homeid}}</td>
-                   <td>{{$match->m_guestid}}</td>
+                   @foreach($match->teams as $team)
+            <td>{{ $team->tm_name}}</td>
+            @endforeach
                 <td>{{ $match->m_date }}</td>
                 <td>{{ $match->m_time }}</td>
                 <td>{{ $match->m_score }}</td>
