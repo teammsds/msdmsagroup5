@@ -23,11 +23,11 @@
 
 
                 <tr style="background-color: lightgoldenrodyellow;text-align:left">
-                    <td>{{ $statistic->m_scored }}</td>
-                    <td> John Paul </td>
-                    <td> Emanderson </td>
-                    <td> Arul </td>
-                    <td>{{ $statistic->m_fouls }}</td>
+                    <td style="text-align:left">{{ $statistic->m_scored }}</td>
+                    <td style="text-align:left"> John Paul </td>
+                    <td style="text-align:left"> Emanderson </td>
+                    <td style="text-align:left"> Arul </td>
+                    <td style="text-align:left">{{ $statistic->m_fouls }}</td>
                 </tr>
 
 
