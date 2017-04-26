@@ -67,6 +67,8 @@ class MatchController extends Controller
         $match['m_ref_com']=$request['m_ref_com'];
         $match['m_homeg']=$request['m_guestg'];
         $match['field_id']=$request['field_id'];
+         $match['m_homeid']=1;
+         $match['m_guestid']=1;
         $match['tournament_id']=$request[ 'tournament_id'];
         $match->save();
         $match->referees()->attach($request['id1']);
