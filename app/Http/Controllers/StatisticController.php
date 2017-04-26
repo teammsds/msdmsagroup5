@@ -47,7 +47,7 @@ class StatisticController extends Controller
                 }
             }
             Statistic::truncate();
-            $id = $maxfoul->player_id;
+            
             $player = Player::where('id','=',$playernum)->first();
                 $statistic = new Statistic();
                 $statistic['m_scored'] = $tname;
