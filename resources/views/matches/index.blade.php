@@ -22,8 +22,9 @@
         <thead>
         <tr class="bg-info">
             <th>Match Number</th>
-            <th>Home Team ID</th>
-            <th>Guest Team ID</th>
+	    @foreach($match->teams as $team)
+            <th>{{ $team->tm_name}}</th>
+            @endforeach
             <th>Date</th>
 			<th>Time</th>
             <th>Score</th>
