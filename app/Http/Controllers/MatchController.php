@@ -96,6 +96,7 @@ class MatchController extends Controller
                 $leaderboard['draws'] = 0;
                 $leaderboard['gfor'] = $request['m_guestg'];
                 $leaderboard['gaga'] = $request['m_homeg'];
+                 $leaderboard['points'] = 0;
                 $leaderboard->save();
             } else {
                 $leaderboard['losses'] = $leaderboard['losses'] + 1;
@@ -135,6 +136,7 @@ class MatchController extends Controller
                 $leaderboard['draws'] = 0;
                 $leaderboard['gfor'] = $request['m_homeg'];
                 $leaderboard['gaga'] = $request['m_guestg'];
+                 $leaderboard['points'] = 0;
                 $leaderboard->save();
             } else {
                 $leaderboard['losses'] = $leaderboard['losses'] + 1;
@@ -258,6 +260,7 @@ class MatchController extends Controller
                 $leaderboard['draws'] = 0;
                 $leaderboard['gfor'] = $request['m_guestg'];
                 $leaderboard['gaga'] = $request['m_homeg'];
+                 $leaderboard['points'] = 0;
                 $leaderboard->save();
             } else {
                 if($homegpre>$guestgpre) {
@@ -328,6 +331,7 @@ class MatchController extends Controller
                 $leaderboard['draws'] = 0;
                 $leaderboard['gfor'] = $request['m_homeg'];
                 $leaderboard['gaga'] = $request['m_guestg'];
+                 $leaderboard['points'] = 0;
                 $leaderboard->save();
             } else {
                 if($homegpre>$guestgpre) {
