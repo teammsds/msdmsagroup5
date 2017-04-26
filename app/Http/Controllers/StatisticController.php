@@ -29,7 +29,7 @@ class StatisticController extends Controller
             $playerid=0;
             foreach($maxfouls as $maxfoul){
                 if($maxfoul['player_id']== $pid){
-                $maxfoul.$i= $maxfoul.$i + $maxfoul['y_card'] + $maxfoul['r_card'];}
+                $maxfoul.$i= $maxfoul.$i + 1 + 1;}
                 else{
                     $i=$i+1;
                     $maxfoul.$i= $maxfoul['y_card'] + $maxfoul['r_card'];
