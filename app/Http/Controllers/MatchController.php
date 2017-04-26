@@ -60,25 +60,12 @@ class MatchController extends Controller
     {
 
         $match= new Match($request->all());
-        $match['m_number']=$request['m_number'];
-        $match['m_time']=$request['m_time'];
-        $match['m_date']=$request['m_date'];
-        $match['m_score']=$request['m_score'];
-        $match['m_ref_com']=$request['m_ref_com'];
-        $match['m_homeg']=$request['m_guestg'];
-        $match['field_id']=$request['field_id'];
-         $match['m_homeid']=1;
-         $match['m_guestid']=1;
-        $match['tournament_id']=$request[ 'tournament_id'];
         $match->save();
         $match->referees()->attach($request['id1']);
         $match->referees()->attach($request['id2']);
         $match->teams()->attach($request['m_homeid']);
         $match->teams()->attach($request['m_guestid']);
-         $match['m_homeid']=$request['m_homeid'];
-        $match['m_guestid']=$request['m_guestid'];
-        $match->save();
-
+         
         if($request['m_homeg']>$request['m_guestg']) {
             $team = Team::findOrFail($request['m_homeid']);
             $leaderboard = Leaderboard::where('t_name', '=', $team->tm_name)->first();
